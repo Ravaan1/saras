@@ -131,7 +131,7 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'Sᴇʟᴇᴄᴛ ➢', 'select'),
+                InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23"),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
@@ -412,7 +412,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'sᴇʟᴇᴄᴛ  ➢', 'select'),
+                    InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23"),
                     InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
@@ -421,7 +421,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'sᴇʟᴇᴄᴛ ➢', 'select'),
+                    InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23"),
                     InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("sᴇᴀsᴏɴs", callback_data=f"seasons#{key}")
                 ]
@@ -431,7 +431,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         await save_group_settings(query.message.chat.id, 'auto_delete', True)
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'sᴇʟᴇᴄᴛ ➢', 'select'),
+                InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23"),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("sᴇᴀsᴏɴs", callback_data=f"seasons#{key}")
             ]
