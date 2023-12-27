@@ -1465,6 +1465,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "plan1":
         buttons = [[
+            InlineKeyboardButton('CLICK HERE TO PAY', url="https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+        ],[
             InlineKeyboardButton('Send ScreenShot', url="https://t.me/Tg_support1_bot"), 
             InlineKeyboardButton('HOW ITS WORK', url="https://t.me/TG_UPDATES1/391") 
         ],[
@@ -1492,6 +1494,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ) 
     elif query.data == "plan2":
         buttons = [[
+            InlineKeyboardButton('CLICK HERE TO PAY', url="https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+        ],[
             InlineKeyboardButton('Send ScreenShot', url="https://t.me/Tg_support1_bot"), 
             InlineKeyboardButton('HOW ITS WORK', url="https://t.me/TG_UPDATES1/391") 
         ],[  
@@ -1519,8 +1523,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ) 
     elif query.data == "plan3":
         buttons = [[
-            InlineKeyboardButton('CHECK PLANS', callback_data='check')
-        ],[  
+            InlineKeyboardButton('CLICK HERE TO PAY', url="https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+        ],[
             InlineKeyboardButton('Send ScreenShot', url="https://t.me/Tg_support1_bot"), 
             InlineKeyboardButton('HOW ITS WORK', url="https://t.me/TG_UPDATES1/391") 
         ],[
