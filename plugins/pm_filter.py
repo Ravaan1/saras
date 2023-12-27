@@ -1411,9 +1411,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "kushal":
         buttons = [[
-            InlineKeyboardButton('CHECK PLANS', callback_data='check'), 
+            InlineKeyboardButton('CHECK PLANS', callback_data='check')
         ],[
-            InlineKeyboardButton('HOW ITS WORK', url="https://t.me/TG_UPDATES1/391"), 
+            InlineKeyboardButton('HOW ITS WORK', url="https://t.me/TG_UPDATES1/391") 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
