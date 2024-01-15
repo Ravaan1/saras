@@ -165,30 +165,31 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
         except Exception as e:
             print(f"An error occurred: {e}")
                     
-                if message.empty:
-                    deleted += 1
-                    continue
-                elif not message.media:
-                    no_media += 1
-                    continue
-                elif message.media not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT]:
-                    unsupported += 1
-                    continue
-                media = getattr(message, message.media.value, None)
-                if not media:
-                    unsupported += 1
-                    continue
-                media.file_type = message.media.value
-                media.caption = message.caption
-                aynav, vnay = await save_file(media)
-                if aynav:
-                    total_files += 1
-                elif vnay == 0:
-                    duplicate += 1
-                elif vnay == 2:
-                    errors += 1
-        except Exception as e:
-            logger.exception(e)
-            await msg.edit(f'Error: {e}')
-        else:
-            await msg.edit(f'Succesfully saved <code>{total_files}</code> to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>')
+        if message.empty:
+            deleted += 1
+            continue
+        elif not message.media:
+            no_media += 1
+            continue
+        elif message.media not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT]:
+            unsupported += 1
+            continue
+        media = getattr(message, message.media.value, None)
+        if not media:
+            unsupported += 1
+            continue
+        media.file_type = message.media.value
+        media.caption = message.caption
+        aynav, vnay = await save_file(media)
+        if aynav:
+            total_files += 1
+        elif vnay == 0:
+            duplicate += 1
+        elif vnay == 2:
+            errors += 1
+    except Exception as e:
+        logger.exception(e)
+        await msg.edit(f'Error: {e}')
+    else:
+        await msg.edit(f'Succesfully saved <code>{total_files}</code> to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>')
+            
