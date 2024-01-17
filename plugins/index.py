@@ -157,14 +157,14 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
                         await msg.edit_text(
                             text=f"Total messages fetched: <code>{current}</code>\nTotal messages saved: <code>{total_files}</code>\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>",
                             reply_markup=reply)
-                    await asyncio.sleep(1)  
-                except FloodWait as e:
-                    wait_time = e.x
-                    print(f"Flood control triggered. Waiting for {wait_time} seconds.")
-                    await asyncio.sleep(1)
-                    continue  
-                except Exception as e:
-                    print(f"An error occurred: {e}")
+                #     await asyncio.sleep(1)  
+                # except FloodWait as e:
+                #     wait_time = e.x
+                #     print(f"Flood control triggered. Waiting for {wait_time} seconds.")
+                #     await asyncio.sleep(1)
+                #     continue  
+                # except Exception as e:
+                #     print(f"An error occurred: {e}")
 
                 if message.empty:
                     deleted += 1
