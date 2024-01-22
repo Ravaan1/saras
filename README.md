@@ -1,4 +1,13 @@
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗧𝗛𝗜𝗦+𝗜𝗦+𝗦𝗔𝗥𝗔!;𝗖𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗞𝗨𝗦𝗛𝗔𝗟+𝗛𝗞™;𝗔+𝗣𝗢𝗪𝗘𝗥𝗙𝗨𝗟𝗟+𝗧𝗚+𝗔𝗨𝗧𝗢𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧!)</p>
+<p align="center">
 
+<h1 align="center">
+  <b> 𝗔𝗨𝗧𝗢𝗙𝗜𝗟𝗧𝗘𝗥 𝗕𝗢𝗧</b>
+</h1>
+
+👉 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 𝙢𝙚 𝙤𝙣 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢
+<p align="middle">        
+<a href="https://telegram.dog/KUSHALHK"><img src="https://img.shields.io/badge/Tᴇʟᴇɢʀᴀᴍ-purple.svg?logo=telegram"></a>
 
 ## 𝐹𝑒𝑎𝑡𝑢𝑟𝑒𝑠
 - [x] 𝐼𝑀𝐷𝐵 𝑇𝑒𝑚𝑝𝑙𝑎𝑡𝑒 𝑆𝑒𝑡
@@ -95,22 +104,22 @@
 ### Optional Variables
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used separated by space )
 * `FILE_STORE_CHANNEL`: Channel from were file store links of posts should be made.Separate multiple IDs by space
-* Check [info.py](https://github.com/Rohaniscoder/EasyAdvAutoFilter/blob/main/info.py
+* Check [info.py](https://github.com/Kushalhk/Sara/blob/main/info.py
 ) for more optional variables
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rohaniscoder/EasyAdvAutoFilter)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kushalhk/Sara)
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/Rohaniscoder/EasyAdvAutoFilter&branch=main&name=EasyAdvAutoFilter)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/Kushalhk/Sara&branch=main&name=EasyAdvAutoFilter)
 
-.[![Deploy on Railway](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github/Rohaniscoder/EasyAdvAutoFilter) 
+.[![Deploy on Railway](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github/Kushalhk/Sara) 
 
 .[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/y0ryFO) 
 
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/Rohaniscoder/EasyAdvAutoFilter
+git clone https://github.com/Kushalhk/Sara
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
