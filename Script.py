@@ -247,12 +247,12 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-➖➖➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖
 🗂 𝗙𝗶𝗹𝗲: <b><font class=smcp>{file_name}</font></b>
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-╔═══════════════════════╗
-⬤ 𝚈𝚘𝚞𝚃𝚞𝚋𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕: <a href='https://youtube.com/@HK_Production1?si=4SGtv4GocenmKoUW'>𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞</a>
-╚═══════════════════════╝
+➖➖➖➖➖➖➖➖➖➖
+╔══════════════════╗
+⬤ 𝚈𝚃 𝙲𝚑𝚊𝚗𝚗𝚎𝚕: <a href='https://youtube.com/@HK_Production1?si=4SGtv4GocenmKoUW'>𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 𝐇𝐞𝐫𝐞</a>
+╚══════════════════╝
 """
     FORCE_SUB = """
 **⚠️ Pʟᴇᴀsᴇ ғᴏʟʟᴏᴡ ᴛʜɪs ʀᴜʟe ⚠️
