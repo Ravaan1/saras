@@ -110,7 +110,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.') and not x.startswith('tg') and not x.startswith('telegram'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.') and not x.startswith('tg') and not x.startswith('telegram'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -137,7 +137,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23") 
+            InlineKeyboardButton("🌀 𝐓𝐆 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌀", url=f"https://t.me/+iLfZB23wdMJiNjQ1") 
         ])
     else:
         btn = []
@@ -387,7 +387,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.') and not x.startswith('tg') and not x.startswith('telegram'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.') and not x.startswith('tg') and not x.startswith('telegram'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -462,7 +462,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     # if ENABLE_SHORTLINK == True:
     btn.insert(0, [
         InlineKeyboardButton("sᴛᴀʀᴛ ʙᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-        InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+        InlineKeyboardButton("🌀 𝐓𝐆 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌀", url=f"https://t.me/+iLfZB23wdMJiNjQ1")
     ])
     # else:
     #     btn.insert(0, [
@@ -611,7 +611,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -631,7 +631,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
     btn.insert(0, [
-        InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23"),
+        InlineKeyboardButton("🌀 𝐓𝐆 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌀", url=f"https://t.me/+iLfZB23wdMJiNjQ1"),
         InlineKeyboardButton("Sᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
     ])
     
@@ -2152,7 +2152,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.') and not x.startswith('tg') and not x.startswith('telegram'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.') and not x.startswith('tg') and not x.startswith('telegram'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -2190,7 +2190,7 @@ async def auto_filter(client, msg, spoll=False):
     #         InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
     #     ])
         btn.insert(0, [
-            InlineKeyboardButton("▫️Gᴇᴛ Pʀᴇᴍɪᴜᴍ▫️", url=f"https://cosmofeed.com/vig/658bb24ecc8dba001f3bab23")
+            InlineKeyboardButton("🌀 𝐓𝐆 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌀", url=f"https://t.me/+iLfZB23wdMJiNjQ1")
         ])
     # if ENABLE_TUTORIAL == True:
     #     btn.insert(0, [
