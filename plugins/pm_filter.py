@@ -273,39 +273,42 @@ async def next_page(bot, query):
 @Client.on_callback_query(filters.regex(r"^spol"))
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
-    
+
     # Check if there is a message being replied to
     if query.message.reply_to_message is None:
         return await query.answer("No message to reply to.", show_alert=True)
-    
+
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
-    
+
     if not movies:
         return await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name), show_alert=True)
-    
+
     if int(user) != 0 and query.from_user.id != int(user):
         return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
-    
+
     if movie_ == "close_spellcheck":
         return await query.message.delete()
-    
+
     movie = movies.get(int(movie_))
-    
+
     # Check if the movie name is misspelled
     if movie is None:
         # Get the corrected movie name
         corrected_movie = spell_checker.correction(movie_)
         if corrected_movie is not None:
-            # Send the corrected movie name as a new query
-            new_query_data = f"{user}#{corrected_movie}"
-            return await bot.send_message(chat_id=query.message.chat.id, text=f"/advantage_spoll_choker {new_query_data}")
-        else:
-            return await query.answer("Movie not found. Try a different movie name.", show_alert=True)
-    
+            # Check if the corrected movie exists in your database
+            corrected_movie_data = movies.get(corrected_movie.lower())
+            if corrected_movie_data is not None:
+                # Send the corrected movie name as a new query
+                new_query_data = f"{user}#{corrected_movie}"
+                return await bot.send_message(chat_id=query.message.chat.id, text=f"/advantage_spoll_choker {new_query_data}")
+            else:
+                return await query.answer("Movie not found. Try a different movie name.", show_alert=True)
+
     await query.answer(script.TOP_ALRT_MSG)
-    
+
     gl = await global_filters(bot, query.message, text=movie)
-    
+
     if not gl:
         k = await manual_filters(bot, query.message, text=movie)
         if not k:
