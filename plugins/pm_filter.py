@@ -296,7 +296,9 @@ async def advantage_spoll_choker(bot, query):
         # Get the corrected movie name
         corrected_movie = spell_checker.correction(movie_)
         if corrected_movie is not None:
-            return await query.answer(f"Did you mean: {corrected_movie}?", show_alert=True)
+            # Send the corrected movie name as a new query
+            new_query_data = f"{user}#{corrected_movie}"
+            return await bot.send_message(chat_id=query.message.chat.id, text=f"/advantage_spoll_choker {new_query_data}")
         else:
             return await query.answer("Movie not found. Try a different movie name.", show_alert=True)
     
