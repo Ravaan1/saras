@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/0219abb5fa7e21faf931a.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/b2135b7051fc24ca16e3f.jpg https://graph.org/file/1f2dd074c32e66cb10ae5.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/66cbe961d8e12533123e7.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/900c5d3aca7c6b100eb69.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/7b0ba2952ec098bb46997.jpg")
@@ -45,7 +45,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Harsh:Harsh@cluster0.n18lz2v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
